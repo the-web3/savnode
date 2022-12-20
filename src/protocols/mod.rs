@@ -14,18 +14,5 @@
     @license GPL-3.0+ <https://github.com/KZen-networks/multi-party-ecdsa/blob/master/LICENSE>
 */
 
-#![allow(clippy::many_single_char_names)]
-#![allow(clippy::too_many_arguments)]
-#![allow(clippy::type_complexity)]
-
-pub mod protocols;
-pub mod utilities;
-#[derive(Copy, PartialEq, Eq, Clone, Debug)]
-pub enum Error {
-    InvalidKey,
-    InvalidSS,
-    InvalidCom,
-    InvalidSig,
-    Phase5BadSum,
-    Phase6Error,
-}
+pub mod multi_party_ecdsa;
+pub mod two_party_ecdsa;
