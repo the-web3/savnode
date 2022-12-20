@@ -1,7 +1,7 @@
 [package]
 name = "savnode"
 version = "0.0.1"
-edition = "2018"
+edition = "2021"
 authors = [
     "Cloud <cloudweisz@gmail.com>",
 ]
@@ -40,6 +40,7 @@ thiserror = "1.0.23"
 derivative = "2"
 sha2 = "0.9"
 libp2p = "0.46"
+anyhow="*"
 
 [dependencies.paillier]
 version = "0.4.2"
@@ -72,44 +73,44 @@ secp256k1 = { version = "0.20", features = ["global-context"]}
 thiserror = "1.0.23"
 round-based = { version = "0.1.4", features = ["dev"] }
 
-[[example]]
-name = "gg18_sm_manager"
+# [[example]]
+# name = "gg18_sm_manager"
 
-[[example]]
-name = "gg18_sign_client"
+# [[example]]
+# name = "gg18_sign_client"
 
-[[example]]
-name = "gg18_keygen_client"
+# [[example]]
+# name = "gg18_keygen_client"
 
-[[example]]
-name = "common"
-crate-type = ["lib"]
+# [[example]]
+# name = "common"
+# crate-type = ["lib"]
 
-[[bench]]
-name = "cclst_keygen"
-path = "benches/two_party_ecdsa/cclst_2019/keygen.rs"
-required-features = ["cclst"]
-harness = false
+# [[bench]]
+# name = "cclst_keygen"
+# path = "benches/two_party_ecdsa/cclst_2019/keygen.rs"
+# required-features = ["cclst"]
+# harness = false
 
-[[bench]]
-name = "cclst_sign"
-path = "benches/two_party_ecdsa/cclst_2019/sign.rs"
-required-features = ["cclst"]
-harness = false
-
-
-[[bench]]
-name = "gg18"
-path = "benches/multi_party_ecdsa/gg18/keygen.rs"
-harness = false
-
-[[bench]]
-name = "lindel2017_keygen"
-path = "benches/two_party_ecdsa/lindell_2017/keygen.rs"
-harness = false
+# [[bench]]
+# name = "cclst_sign"
+# path = "benches/two_party_ecdsa/cclst_2019/sign.rs"
+# required-features = ["cclst"]
+# harness = false
 
 
-[[bench]]
-name = "lindel2017_sign"
-path = "benches/two_party_ecdsa/lindell_2017/sign.rs"
-harness = false
+# [[bench]]
+# name = "gg18"
+# path = "benches/multi_party_ecdsa/gg18/keygen.rs"
+# harness = false
+
+# [[bench]]
+# name = "lindel2017_keygen"
+# path = "benches/two_party_ecdsa/lindell_2017/keygen.rs"
+# harness = false
+
+
+# [[bench]]
+# name = "lindel2017_sign"
+# path = "benches/two_party_ecdsa/lindell_2017/sign.rs"
+# harness = false
