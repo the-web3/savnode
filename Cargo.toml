@@ -76,8 +76,8 @@ secp256k1 = { version = "0.20", features = ["global-context"]}
 thiserror = "1.0.23"
 round-based = { version = "0.1.4", features = ["dev"] }
 
-# [[example]]
-# name = "gg18_sm_manager"
+[[example]]
+name = "gg20_sm_manager"
 
 # [[example]]
 # name = "gg18_sign_client"
