@@ -82,6 +82,12 @@ name = "gg20_sm_manager"
 [[example]]
 name = "gg20_keygen"
 
+[[example]]
+name = "gg20_signing"
+
+[[example]]
+name = "gg20_sm_client"
+
 # [[example]]
 # name = "gg18_keygen_client"
 
